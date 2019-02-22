@@ -1,0 +1,46 @@
+.logoSite{
+    height: 30px;
+}
+
+.movieImageCover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container_play {
+  position: relative;
+}
+
+.image_play {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_play {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container_play:hover .image_play {
+  opacity: 0.3;
+}
+
+.container_play:hover .middle_play {
+  opacity: 1;
+}
+
+.text_play {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
